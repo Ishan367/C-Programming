@@ -12,4 +12,3 @@ int main()
         printf("%d is the largest number.\n", c);
     return 0;
 }
-2
