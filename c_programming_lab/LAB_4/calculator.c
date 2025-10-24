@@ -34,7 +34,6 @@ int main()
 
         case 4:
         result = a/b;
-        if 
         printf("result for division %f",result);
         break;
     return 0;
