@@ -13,7 +13,7 @@ int main()
     printf("enter 2 for multiplication\n");
     printf("enter 3 for subtraction\n");
     printf("enter 4 for division\n");
-    printf("enter the operator");
+    printf("enter the operator\n");
     scanf("%d",&c);
     switch(c)
     {
