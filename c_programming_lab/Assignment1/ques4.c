@@ -1,26 +1,25 @@
 #include <stdio.h>
 int main()
 {
-    float unit,bill;
+    float units,bill;
     printf("Enter the number of units consumed: ");
-    scanf("%f", &unit);
-    if (unit <= 100)
+    scanf("%f", &units);
+    if (units <= 100)
     {
-        bill = unit * 1.5;
+        bill = units * 1.5;
+    }   
+    else if (units <= 200)
+    {
+        bill = (100 * 1.5) + ((units - 100) * 2.00);
     }
-    else if (unit>=100 && unit <= 200)
+    else if (units <= 300)
     {
-        bill = (unit * 2);
-    }
-    else if (unit>=200 && unit <= 300)
-    {
-        bill = (unit * 3);
+        bill = (100 * 1.5) + (100 * 2.00) + ((units - 200) * 3.00);
     }
     else
     {
-        bill = (unit * 5);
+        bill = (100 * 1.5) + (100 * 2.00) + (100 * 3.00) + ((units - 300) * 5.00);
     }
-    printf("The total electricity bill is: %.2f\n", bill);
-    return 0;   
-
+    printf("electricity bill is: %.2f\n", bill);
+    return 0;       
 }
